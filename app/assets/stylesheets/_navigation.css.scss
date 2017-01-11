@@ -64,3 +64,12 @@ footer {
   }
 }
 
+// Toggle
+
+.navbar-toggle {
+  background-color: $highlight-color !important ;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white;
+}

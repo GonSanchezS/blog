@@ -19,6 +19,7 @@
 .homepage--title {
   font-size: 3rem;
   font-family: $secondary-font;
+  font-weight: 700;
 }
 
 .homepage--intro {
@@ -34,10 +35,10 @@
     color: $light-color;
     letter-spacing: 2px;
     padding: 1.5em 0;
+    font-weight: 700;
     }
 
   .column--post-title {
-    font-weight: 400;
     margin-bottom: .5em;
 
     .column--post-title__link {

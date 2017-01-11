@@ -12,11 +12,29 @@
 </head>
 <body>
 
+ <!-- Collect the nav links, forms, and other content for toggling -->
+    
+
 <header class="clearfix ">
+   <!-- Brand and toggle get grouped for better mobile display -->
+
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
     <%= link_to root_path, :class => 'header--logo' do %>
       <i class="em em-rocket"></i></a>
     <% end %>
-    <nav class="header--nav">
+
+    </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+    <nav class="header--nav navbar-nav">
       <% link_to 'Articles', posts_path, :class => "header--nav--link"  %>
       <a class="header--nav--link" href="now.html">Now</a>
       <a class="header--nav--link" href="articles.html">Articles</a>
@@ -26,6 +44,8 @@
       <a class="header--nav--link" href="contact.html">Contact</a>
     </nav>
   </header>
+
+  </div>
 
 <%= yield %>
 
