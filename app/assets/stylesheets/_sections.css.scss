@@ -1,0 +1,26 @@
+.section--title {
+  text-align: left;
+  font-size: 3rem;
+  color: $highlight-color;
+  font-family: $secondary-font;
+}
+
+.section--intro {
+  text-align: left;
+  font-size: 1.8rem;
+  color: $light-color;
+}
+
+.section--wrapper {
+  width: 60%;
+}
+
+.section--body {
+  text-align: left;
+  font-size: 1.8rem;
+  font-family: $primary-font; 
+}
+
+.em-house {
+  font-size: 1.4rem;
+}

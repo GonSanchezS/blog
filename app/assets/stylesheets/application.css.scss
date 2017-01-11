@@ -1,0 +1,108 @@
+/*
+ *= require_self
+ */
+
+ @import 'normalize';
+
+// Color Variables 
+
+$dark-color: #161616;
+$light-color: #c6c6c6;
+$highlight-color: #50E3C2;
+
+// Font Variables
+
+$secondary-font: 'Roboto Slab', serif;
+$primary-font: 'Roboto', sans-serif;
+
+// Sitewide Styles 
+
+* {
+  box-sizing: border-box;
+}
+
+html { font-size: 62.5%; } 
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, a {
+  color: $dark-color;
+  font-family: $primary-font;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em;
+}
+
+// Reusable Styles 
+
+.section--title {
+  text-align: left;
+  font-size: 3rem;
+  color: $highlight-color;
+  font-family: $secondary-font;
+}
+
+.section--intro {
+  text-align: left;
+  font-size: 1.8rem;
+  color: $light-color;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.site--link {
+  color: $dark-color;
+  border-bottom: 2px dotted $highlight-color;
+  text-decoration: none;
+      &:hover {
+      color: $dark-color;
+      border-bottom: 2px solid $highlight-color;
+      text-decoration: none;
+    }
+}
+
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+
+// Clear fix 
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+// Imports 
+
+@import 'landing';
+@import 'navigation';
+@import 'articles';
+@import 'sections';
+

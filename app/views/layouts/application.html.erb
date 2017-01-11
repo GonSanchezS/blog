@@ -2,13 +2,41 @@
 <html>
 <head>
   <title>Blog</title>
+  <title>@gonsanchezs</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<header class="clearfix ">
+    <%= link_to root_path, :class => 'header--logo' do %>
+      <i class="em em-rocket"></i></a>
+    <% end %>
+    <nav class="header--nav">
+      <% link_to 'Articles', posts_path, :class => "header--nav--link"  %>
+      <a class="header--nav--link" href="now.html">Now</a>
+      <a class="header--nav--link" href="articles.html">Articles</a>
+      <a class="header--nav--link" href="case-studies.html">Case Studies</a>
+      <a class="header--nav--link" href="books.html">Books</a>
+      <a class="header--nav--link" href="cities.html">Cities</a>
+      <a class="header--nav--link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
 <%= yield %>
+
+<footer>
+  <p class="footer--note">Built in Reyjkavik🇮🇸</p>
+  <nav class="footer--nav">
+    <a href="#" class="socicon-twitter footer--nav--link"></a>
+    <a href="#" class="socicon-github footer--nav--link"></a>
+    <a href="#" class="socicon-instagram footer--nav--link"></a>
+  </nav>
+</footer>
 
 </body>
 </html>

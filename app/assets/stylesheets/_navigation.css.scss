@@ -1,0 +1,66 @@
+// Header
+
+header {
+  padding: 2em 5%;
+
+  .header--logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 0.5em 1rem;
+    text-decoration: none;
+    color: $dark-color;
+    float: left;
+  }
+
+  .header--nav {
+    float: right;
+    padding-top: .5rem;
+
+    .header--nav--link {
+      color: $light-color;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.4rem;
+
+      &:hover {
+        color: $dark-color;
+        border-bottom: 2px solid $highlight-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+// Footer
+
+footer {
+  padding: 2em 5%;
+
+  .footer--note {
+    float: left;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .footer--nav {
+    padding-top: .2em;
+    font-size: 1.2rem;
+  
+    .footer--nav--link { 
+      color: $dark-color;
+      float: right;
+      text-decoration: none;
+      margin-left: 1em;
+      padding-top: .2em;
+
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+}
+
