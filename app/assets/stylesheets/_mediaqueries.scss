@@ -1,6 +1,41 @@
 @media screen and (max-width: 768px) {
+
  #mobile-invisible { 
   display: none; 
+ }
+
+ .clearfix {
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ header .header--nav {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }  
+
+  .navbar-nav {
+    background-color: $highlight-color;
+  }
+
+ header .header--nav .header--nav--link {
+  color: white;
+  font-size: 1.8em;
+  font-family: $secondary-font;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 20px;
+
+  &:hover {
+    background-color: $highlight-color;
+    color: white;
+  }
+
+  &:active {
+    border-bottom: 3px solid white;
+  }
  }
 
  .homepage--title {
@@ -9,6 +44,17 @@
 
  .homepage--intro {
   font-size: 2rem;
+ }
+
+ .column__intro {
+  padding-right: 0px;
+ }
+
+ footer .footer--nav .footer--nav--link {
+  float: left;
+  font-size: 1.9rem;
+  margin-left: 0;
+  margin-right: 16px;
  }
 }
 
