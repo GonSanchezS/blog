@@ -70,7 +70,7 @@ footer {
   .footer--note {
     float: left;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .footer--nav {
@@ -83,6 +83,7 @@ footer {
       text-decoration: none;
       margin-left: 1em;
       padding-top: .2em;
+      font-size: 1.4rem;
 
       &:hover {
         color: $highlight-color;
