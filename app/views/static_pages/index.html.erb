@@ -7,14 +7,16 @@
       <p class="homepage--intro">I enjoy coffee <i class="em em-coffee"></i>, football <i class="em em-soccer"></i>, beer <i class="em em-beer"></i>, <a href="cities.html" class="site--link">flying</a> <i class="em em-airplane"></i> and <a href="books.html" class="site--link">books</a> <i class="em em-books"></i>.</p>
     </div>
 
+
+
     <div class="col-xs-12 col-md-3 column" id="mobile-invisible">
       <h3 class="column--title">Random Thoughts</h3>
-      <h4 class="column--post-title"><a class="column--post-title__link" href="#">Iceland for Millenials</a></h4>
-      <p class="column--post__date"">Friday April 10th</p>      
-      <h4 class="column--post-title"><a class="column--post-title__link" href="#">Landing a Remote Job</a></h4>
-      <p class="column--post__date"">Friday April 10th</p>      
-      <h4 class="column--post-title"><a class="column--post-title__link" href="#">Cooking for Beginners</a></h4>
-      <p class="column--post__date"">Friday April 10th</p>      
+
+      <% @posts.each do |post| %>
+        <h4 class="column--post-title"><%= link_to post.title, post, :class => "column--post-title__link" %></h4>
+        <p class="column--post__date""> <%= post.created_at.strftime("%A, %b, %d") %></p>
+      <% end %>
+      
     </div>
 
     <div class="col-xs-12 col-md-3 column" id="mobile-invisible">
