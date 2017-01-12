@@ -21,13 +21,17 @@ header {
     .header--nav--link {
       color: $light-color;
       text-decoration: none;
-      margin: 0 1rem;
+      margin-top: 0;
+      margin-left: 3rem;
       font-size: 1.4rem;
+      font-family: $secondary-font;
+      padding: 0px;
 
       &:hover {
         color: $dark-color;
         border-bottom: 2px solid $highlight-color;
         text-decoration: none;
+        background: none;
       }
     }
   }
@@ -35,11 +39,8 @@ header {
 
 
 
-// Footer
+// Sticky footer styles 
 
-
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -63,6 +64,8 @@ body {
   padding: 0;
 }
 
+// Regular footer (not needed for stickyness)
+
 
 footer {
   padding: 2em 5%;
@@ -71,6 +74,7 @@ footer {
     float: left;
     margin: 0;
     font-size: 1.4rem;
+    font-family: $secondary-font;
   }
 
   .footer--nav {
