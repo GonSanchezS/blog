@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+  <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -16,8 +17,8 @@
     
 
 <header class="clearfix ">
-   <!-- Brand and toggle get grouped for better mobile display -->
 
+   <!-- Brand and toggle get grouped for better mobile display -->
    <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -26,22 +27,24 @@
         <span class="icon-bar"></span>
       </button>
 
-    <%= link_to root_path, :class => 'header--logo' do %>
-      <i class="em em-rocket"></i></a>
-    <% end %>
-
+      <%= link_to root_path, :class => 'header--logo' do %>
+        <i class="em em-rocket"></i></a>
+      <% end %>
     </div>
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-    <nav class="header--nav navbar-nav">
-      <% link_to 'Articles', posts_path, :class => "header--nav--link"  %>
-      <a class="header--nav--link" href="now.html">Now</a>
-      <a class="header--nav--link" href="articles.html">Articles</a>
-      <a class="header--nav--link" href="case-studies.html">Case Studies</a>
-      <a class="header--nav--link" href="books.html">Books</a>
-      <a class="header--nav--link" href="cities.html">Cities</a>
-      <a class="header--nav--link" href="contact.html">Contact</a>
+    <nav class="header--nav">
+    <ul class="nav navbar-nav"> 
+      <li><% link_to 'Articles', posts_path, :class => "header--nav--link"  %></li>
+      <li><a class="header--nav--link" href="now.html">Now</a></li>
+      <li><a class="header--nav--link" href="articles.html">Articles</a>
+      </li>
+      <li><a class="header--nav--link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="header--nav--link" href="books.html">Books</a></li>
+      <li><a class="header--nav--link" href="cities.html">Cities</a></li>
+      <li><a class="header--nav--link" href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -49,13 +52,15 @@
 
 <%= yield %>
 
-<footer>
+<footer class="footer">
+<div class="container">
   <p class="footer--note">Built in Reyjkavik🇮🇸</p>
   <nav class="footer--nav">
     <a href="#" class="socicon-twitter footer--nav--link"></a>
     <a href="#" class="socicon-github footer--nav--link"></a>
     <a href="#" class="socicon-instagram footer--nav--link"></a>
   </nav>
+  </div>
 </footer>
 
 </body>

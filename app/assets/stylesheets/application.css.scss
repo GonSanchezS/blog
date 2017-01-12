@@ -6,6 +6,12 @@
 @import "bootstrap";
 @import 'normalize';
 
+// Breakpoints
+
+$phone: 380px;
+$tablet: 768px;
+
+
 // Color Variables 
 
 $dark-color: #161616;
@@ -107,4 +113,5 @@ h6 {
 @import 'navigation';
 @import 'articles';
 @import 'sections';
+@import 'mediaqueries';
 
