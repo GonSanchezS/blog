@@ -12,3 +12,5 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 gem 'sass-rails'
+gem 'pygments.rb', '~> 0.6.0'
+gem 'redcarpet', '~>3.2.2'

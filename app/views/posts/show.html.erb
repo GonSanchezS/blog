@@ -5,11 +5,11 @@
  <br />
 
 <div class="article--body"> 
-<%= @post.content %> <br />
+<%= markdown @post.content %> <br />
 </div>
 
-<!-- <%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete thi post?" } %> -->
+<%= link_to "Edit", edit_post_path(@post) %>
+<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete thi post?" } %> 
 
   </div>
 </div>
