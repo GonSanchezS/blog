@@ -44,11 +44,15 @@
 
 .article--body {
 
-  p {
+  p, li {
     text-align: left;
     font-size: 1.8rem;
     font-family: $primary-font; 
     line-height: 1.75;
+    
+  }
+
+  p {
     margin-bottom: 1em;
   }
 
