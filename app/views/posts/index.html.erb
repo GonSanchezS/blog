@@ -1,1 +1,17 @@
-<h1>Hello world</h1>
+<div class="content clearfix">
+
+    <h1 class="section--title">Random Thoughts</h1>
+    <p class="section--intro">This is my personal place to organize and dump my thoughts.</p>
+
+    <br />
+
+    <% @posts.each do |post| %>
+       <div class="page--posts">
+      <div class="post">
+        <h2 class="post--title"><a class="post--title__link" href="#"><%= link_to post.title, post %></a></h2>
+      <p class="post--date"><%= post.created_at.strftime("%B %Y") %></p>  
+      </div>
+    </div>
+    <% end %>
+
+  </div>

@@ -14,7 +14,7 @@
 
       <% @posts.each do |post| %>
         <h4 class="column--post-title"><%= link_to post.title, post, :class => "column--post-title__link" %></h4>
-        <p class="column--post__date""> <%= post.created_at.strftime("%A, %b, %d") %></p>
+        <p class="column--post__date""> <%= post.created_at.strftime("%B %Y") %></p>
       <% end %>
       
     </div>
