@@ -16,3 +16,4 @@ gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~>3.2.2'
 gem 'rails_12factor', group: :production
 gem 'friendly_id', '~>5.1.0'
+gem 'will_paginate', '~>3.0.7'
