@@ -1,21 +1,19 @@
 <div class="content clearfix">
-
+  <div class="section--wrapper col-xs-12">
     <h1 class="section--title">Random Thoughts</h1>
-    <p class="section--intro">This is my personal place to organize and dump my thoughts.</p>
-
-    <br />
+    <div class="section--body">
+      <h4>This is my personal place to organize and dump my thoughts.</h4>
+    </div>
 
     <% @posts.each do |post| %>
-       <div class="page--posts">
-      <div class="post">
-        <h2 class="post--title"><a class="post--title__link" href="#"><%= link_to post.title, post %></a></h2>
-      <p class="post--date"><%= post.created_at.strftime("%B %Y") %></p>  
+      <div class="page--posts">
+        <div class="post">
+          <h2 class="post--title"><a class="post--title__link" href="#"><%= link_to post.title, post %></a></h2>
+          <p class="post--date"><%= post.created_at.strftime("%B %Y") %></p>  
+        </div>
       </div>
-    </div>
     <% end %>
-
-    <br />
-
-  <%= will_paginate @posts, :class => 'digg_pagination' %>
-
+      <br />
+    <%= will_paginate @posts, :class => 'digg_pagination' %>
   </div>
+</div>
