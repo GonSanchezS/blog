@@ -1,15 +1,9 @@
 .section--title {
   text-align: left;
-  font-size: 3rem;
+  font-size: 5rem;
   color: $highlight-color;
   font-family: $secondary-font;
   font-weight: 700;
-}
-
-.section--intro {
-  text-align: left;
-  font-size: 1.8rem;
-  color: $light-color;
 }
 
 .section--wrapper {
@@ -17,25 +11,60 @@
 }
 
 .section--body {
+
+  p, li {
+    text-align: left;
+    font-size: 1.8rem;
+    font-family: $primary-font; 
+    line-height: 1.75;
+    
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: $secondary-font;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    font-family: $secondary-font;
+    font-weight: 700;
+  }
+
+  h4 {
   text-align: left;
-  font-size: 1.8rem;
-  font-family: $primary-font; 
-}
-
-.section--header {
   font-size: 2rem;
-  font-family: $secondary-font;
-  font-weight: 700;
-}
+  color: $light-color;
+  line-height: 1.75;
+  margin-bottom: 2em;
+  }
 
-.em-house {
-  font-size: 1.4rem;
+  a {
+    color: $dark-color;
+    border-bottom: 2px dotted $highlight-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark-color;
+      border-bottom: 2px solid $highlight-color;
+      text-decoration: none;
+    }
+  }
+
 }
 
 .update {
   font-size: 1.8rem;
   color: $light-color;
+}
 
+.em-house, .em-book {
+  font-size: 1.4rem;
 }
 
 // 
