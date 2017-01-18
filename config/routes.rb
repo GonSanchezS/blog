@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'now', to: "static_pages#now"
   get 'cities', to: "static_pages#cities"
   get 'books', to: "static_pages#books"
+  get 'email', to: "static_pages#email"
   resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

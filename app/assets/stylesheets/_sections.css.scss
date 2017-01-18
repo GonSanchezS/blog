@@ -37,3 +37,17 @@
   color: $light-color;
 
 }
+
+// 
+
+.email--body {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 3em 3em;
+  overflow: auto;
+
+  p {
+    font-family: $tertiary-font;
+  }
+}
