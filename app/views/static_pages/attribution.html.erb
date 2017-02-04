@@ -1,12 +1,79 @@
 <div class="content clearfix">
   <div class="article--wrapper col-xs-12">
 
-  <h1 class="article--title">Building an Attributin Model for EVELO</h1>
+<h1 class="article--title">Building an Attributin Model for EVELO</h1>
 
-  <div class="article--body"> 
-   <br />
+<div class="article--body"> 
+
+<br />
+
+<p>At EVELO, we are on consistently attempting to become more sophisticated with our marketing efforts. </p>
+
+<p>As part of this effort, we moved away from the usual last click attribution model present in all Google Analytics reports.</p>
+<p>As Avinash Kaushik [likes to say](https://www.kaushik.net/avinash/multi-channel-attribution-modeling-good-bad-ugly-models/) – *the only use for last click attribution now is to get you fired. Avoid it.*</p>
+<p>He is right. This model is silly. It gives no weight to all the preceding actions a customer took. On top of that, the way we do business generates a couple of interesting challenges.</p>
+
+<h2>First challenge – a sales team </h2>
+<p>Due to the price point of our product ($2950 AOV), we act more as a B2B business than an eCommerce consumer company. In fact, 86% of our sales happen after some kind of interactions with our team, and those sales have an AOV $300 higher than the remaining 14%. This means people are more likely to buy (and spend more) if the speak to us. </p>
+<p>The problem this causes is when our sales team places an order over the phone, sends a cart link to the customer, or simply suggests the customer to head to evelo.com. </p>
+<p>Why we know this? Not only we know our business, but if you look at Last Click attribution, most than 50% of our sales are attributed to *direct*.</p>
+
+<%= image_tag '1-last-click.png' %>
+
+<br />
+
+<p>Yeah, fun. </p>
+<p>A quick solution would be to use Last Non-Direct Click attribution. And in fact, when we play with this model, it looks a lot better.</p>
+
+<%= image_tag '1-last-non-direct.png' %>
+
+<br />
+
+<p>But this generates another problem... </p>
+
+<h2>Second channel – discovery is being unattributed </h2>
+
+<p>Discovery is being under attributed, so Adwords ROI sucks.</p>
+<p>As you can see, if we look at Adwords numbers on a last click basis, our branded campaigns look amazing. </p>
+
+
+<%= image_tag '2-branded.png' %>
+
+<br />
+
+<p>But are they? Or are we seeing those numbers because visitors, after doing research, google 'evelo' and click on one of our ads? If this is the case, we are attributing everything to the last campaign they see, but not that last one. </p>
+<p>With this model, our average CAC for Adwords is $1k. But it's really not. </p>
+<p>If we change the model to First Click Attribution, our unbranded campaigns start gaining traction. This means unbranded search has a huge first interaction impact (roughly 15x the last click model)</p>
+
+<%= image_tag '2-unbranded.png' %>
+
+<br />
+
+<p>Better. But still not good. The challenge is that we aren't attributing a single thing to last clicks, which is essentially, the final action previous to a conversion. </p>
+
+<h2>Solution</h2>
+
+<p>The solution would be to build a custom attribution model. The two main things we need to figure out is how to (a) under attributing direct, and (b) over attribute discovery. </p>
+<p>This is how our new model look like now. </p>
+
+<%= image_tag '3-attribution.png' %>
+
+<br />
+
+<p>A few interesting decisions. </p>
+
+<ul>
+<li><b>Position-based vs Timedecay.</b> With our current marketing channels, we needed to give proper attribution to discovery, specially for Adwords.</li>
+<li><b>Conversion window.</b> We decided to go with  14 days, because most of our sales happen in that time period. </li>
+<li><b>Giving direct a weight of 0.</b> By adding this custom rule, we are removing direct from last click attribution. Which means we are combinining position based model with the Non-direct Last Click model. Hopefully, this gives us the best of both worlds.</li>
+
+</ul>
+
+<p>It's not perfect, but it's a great place to start.</p>
 
   </div>
+
+
 
   </div>
 </div>
