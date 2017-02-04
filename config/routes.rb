@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'cities', to: "static_pages#cities"
   get 'books', to: "static_pages#books"
   get 'email', to: "static_pages#email"
+  get 'attribution', to: "static_pages#attribution"
   resources :posts
   get '*path' => redirect('/')
   # The priority is based upon order of creation: first created -> highest priority.

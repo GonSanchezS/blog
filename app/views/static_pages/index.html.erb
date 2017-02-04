@@ -1,6 +1,6 @@
 <div class="content clearfix">
 
-    <div class="column col-xs-12 col-md-7 column__intro">
+    <div class="column col-xs-12 col-md-6 column__intro">
       <h2 class="homepage--title">Hola, che.</h2>
       <p class="homepage--intro">Argentinean. Currently Director of Marketing at <a href="http://evelo.com" class="site--link">EVELO</a>.</p>
       <p class="homepage--intro">Built 2 startups with varying degrees of success that ultimately failed. Brandery mentor &amp; alumn.</p>
@@ -8,10 +8,8 @@
 
     </div>
 
-    <!--
-
     <div class="col-xs-12 col-md-3 column" id="mobile-invisible">
-      <h3 class="column--title">Articles</h3>
+      <h3 class="column--title">Thoughts</h3>
 
       <% @posts.each do |post| %>
         <h4 class="column--post-title"><%= link_to post.title, post, :class => "column--post-title__link" %></h4>
@@ -20,20 +18,15 @@
       
     </div>
 
-    -->
-
-    <!--
 
     <div class="col-xs-12 col-md-3 column" id="mobile-invisible">
       <h3 class="column--title">Case Studies</h3>
       <h4 class="column--post-title"><a class="column--post-title__link" href="#">Generating $150,000 with Email Automation</a></h4>
+      <p class="column--post__date"">Coming soon</p>      
+      <h4 class="column--post-title"><%= link_to 'Building an Attribution Model for EVELO', attribution_path, :class => "column--post-title__link" %></h4>
       <p class="column--post__date"">Friday April 10th</p>      
-      <h4 class="column--post-title"><a class="column--post-title__link" href="#">Chess App</a></h4>
-      <p class="column--post__date"">Friday April 10th</p>      
-      <h4 class="column--post-title"><a class="column--post-title__link" href="#">Planning a Successful Giveaway</a></h4>
-      <p class="column--post__date">Friday April 10th</p>
+      <h4 class="column--post-title"><a class="column--post-title__link" href="https://www.viralsweep.com/casestudies/evelo/">Planning a Successful Giveaway</a></h4>
+      <p class="column--post__date">Viralsweep.com</p>
     </div>
-
--->
 
   </div>
