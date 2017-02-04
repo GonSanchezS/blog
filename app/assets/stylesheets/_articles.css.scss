@@ -89,3 +89,10 @@
   }
 
 }
+
+.admin--links a {
+  margin-right: 20px;
+  color: $highlight-color;
+  font-family: $secondary-font;
+  font-size: 1.8rem;
+}

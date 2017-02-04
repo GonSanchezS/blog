@@ -42,6 +42,9 @@
       <li><a class="header--nav--link" href="books.html">Books</a></li>
       <li><a class="header--nav--link" href="cities.html">Cities</a></li>
       <li><a class="header--nav--link" href="contact.html">Contact</a></li>
+      <% if user_signed_in? %>
+      <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete, :class => "header--nav--link" %></li>
+      <% end %>
       </ul>
     </nav>
   </header>
