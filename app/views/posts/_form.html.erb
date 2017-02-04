@@ -9,14 +9,14 @@
       </ul>
   <% end %>
 
-  <%= f.label :title %><br />
-  <%= f.text_field :title %>
+  <%= f.label :title, "Your title - make it short and memorable" %><br />
+  <%= f.text_field :title, :class => "title--box" %>
 
     <br />
     <br />
 
-  <%= f.label :content, "Write your article here" %><br />
-  <%= f.text_area :content %>
+  <%= f.label :content, "Your bangin' article goes here" %><br />
+  <%= f.text_area :content, :class => "text--box" %>
 
     <br />
     <br />

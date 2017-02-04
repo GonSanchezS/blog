@@ -47,9 +47,13 @@
   </header>
 
   <% if notice %>
-    <p class="notice"><%= notice %></p>
+    <div class="content clearfix">
+      <p class="notice"><%= notice %></p>
+    </div>
   <% elsif alert %>
+    <div class="content clearfix">
       <p class="alert"><%= alert %></p>
+    </div>
   <% end %>
 
   </div>
