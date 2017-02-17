@@ -9,11 +9,21 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.ico' %>
+  <meta name="viewport" content="width=devide-width, initial-scale=1">
 </head>
 <body>
 
  <!-- Collect the nav links, forms, and other content for toggling -->
-    
+    <script type="text/javascript">
+$(function() {
+  $('form').submit(function(){
+    $.post('http://example.com/upload', function() {
+      window.location = 'http://google.com';
+    });
+    return false;
+  });
+});
+</script>
 
 <header class="clearfix ">
 
