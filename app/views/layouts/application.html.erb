@@ -15,6 +15,7 @@
 
  <!-- Collect the nav links, forms, and other content for toggling -->
 
+
 <header class="clearfix ">
 
    <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,23 +26,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
-      <%= link_to root_path, :class => 'header--logo' do %>
-        <i class="em em-house"></i>
-      <% end %>
     </div>
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-    <nav class="header--nav">
+    <nav class="header--nav col-md-6 col-md-offset-3 column__intro">
     <ul class="nav navbar-nav"> 
+      <li><%= link_to '🏠', root_path, :class => "header--nav--link"  %></li>
       <li><%= link_to 'Now', now_path, :class => "header--nav--link"  %></li>
-      <li><%= link_to 'Thoughts', posts_path, :class => "header--nav--link"  %></li>
-      </li>
-      <!--<li><a class="header--nav--link" href="case-studies.html">Case Studies</a></li>-->
       <li><a class="header--nav--link" href="books.html">Books</a></li>
       <li><a class="header--nav--link" href="cities.html">Cities</a></li>
-      <li><a class="header--nav--link" href="contact.html">Contact</a></li>
       <% if user_signed_in? %>
       <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete, :class => "header--nav--link" %></li>
       <% end %>
@@ -76,3 +70,4 @@
 
 </body>
 </html>
+

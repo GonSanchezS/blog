@@ -1,35 +1,52 @@
 // Header
 
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.em-house {
+  padding: 0px !important;
+}
+
 header {
   padding: 2em 5%;
+
 
   .header--logo {
     font-weight: 700;
     font-size: 1.5rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    padding: 0.5em 1rem;
+    padding: 0px;
     text-decoration: none;
     color: $dark-color;
     float: left;
+    margin-top: -5px;
+    padding: 0px 0px 20px 0px !important;
+
+    &:hover {
+      background-color: white !important;
+      border-bottom: white !important;
+
+    }
+
   }
 
   .header--nav {
-    float: right;
-    padding-top: .5rem;
+    padding: 2.5% 5% 0 5%;
 
     .header--nav--link {
       color: $light-color;
       text-decoration: none;
-      margin-top: 0;
-      margin-left: 3rem;
+      padding-top: 5px;
+      margin-right: 3rem;
       font-size: 1.4rem;
       font-family: $secondary-font;
       padding: 0px;
 
       &:hover {
-        color: $dark-color;
-        border-bottom: 2px solid $highlight-color;
+        color: $highlight-color;
         text-decoration: none;
         background: none;
       }
@@ -68,7 +85,7 @@ body {
 
 
 footer {
-  padding: 2em 5%;
+  padding: 2em;
 
   .footer--note {
     float: left;
