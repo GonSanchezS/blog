@@ -3,6 +3,7 @@
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
+
 }
 
 .em-house {
@@ -33,23 +34,35 @@ header {
 
   }
 
+
+    a.current {
+      border-bottom: 2px dotted $highlight-color !important;
+    }
+
   .header--nav {
-    padding: 2.5% 5% 0 5%;
+    padding: 2.5% 5% 0 0;
+
 
     .header--nav--link {
       color: $light-color;
       text-decoration: none;
       padding-top: 5px;
       margin-right: 3rem;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-family: $secondary-font;
       padding: 0px;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      font-weight: 700;
+
+
 
       &:hover {
         color: $highlight-color;
         text-decoration: none;
         background: none;
       }
+
     }
   }
 }
@@ -86,12 +99,13 @@ body {
 
 footer {
   padding: 2em;
+  padding-left: 5em !important;
 
   .footer--note {
     float: left;
     margin: 0;
     font-size: 1.4rem;
-    font-family: $secondary-font;
+    font-family: $primary-font;
   }
 
   .footer--nav {
@@ -100,7 +114,7 @@ footer {
   
     .footer--nav--link { 
       color: $dark-color;
-      float: right;
+      float: left;
       text-decoration: none;
       margin-left: 1em;
       padding-top: .2em;

@@ -22,13 +22,14 @@
   }
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
   }
 
   h2 {
     font-size: 3rem;
     font-family: $secondary-font;
     font-weight: 700;
+    margin-top: 1.5em;
   }
 
   h3 {
@@ -39,9 +40,9 @@
 
   h4 {
   text-align: left;
-  font-size: 2rem;
-  color: $light-color;
-  line-height: 1.75;
+  font-size: 2.1rem;
+  color: $dark-color;
+  line-height: 1.6;
   margin-bottom: 2em;
   }
 
