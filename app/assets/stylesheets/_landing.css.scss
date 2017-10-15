@@ -14,19 +14,46 @@
   padding: 0 2.5%;
 }
 
+.left-column {
+  min-height:100%;  /* <-- fixes the background-color issue when content grows */
+  padding: 50px !important;
+}
+
+.right-column {
+  position:fixed; /* <-- fixes the left panel to prevent from scrolling */
+  top:0;
+  right:0;
+  height:100%;
+}
+
+
+
 // General Styles
 
 .homepage--title {
-  font-size: 7rem;
+  font-size: 3rem;
   font-family: $secondary-font;
   font-weight: 700;
   margin-bottom: 2rem;
-  color: #F16B6F;
+  margin-top: 0;
 }
 
 .homepage--intro {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.homepage--work {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.9;
+  margin-top: 40px;
 }
 
 
@@ -39,7 +66,6 @@
     text-transform: uppercase; 
     color: $light-color;
     letter-spacing: 2px;
-    padding: 1em 0;
     font-weight: 700;
     }
 
@@ -68,8 +94,19 @@
   }
 }
 
-.column__intro {
-    padding: 0px;
+.individual--tag {
+  background-color: #c4c4c4;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.7;
+  padding: 3px 10px 3px 10px;
+}
+
+.work--date {
+  color: #dfdfdf;
 }
 
 

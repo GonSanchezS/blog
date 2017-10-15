@@ -53,6 +53,15 @@ p, ul, ol {
   margin: 0 0 1.6em;
 }
 
+a {
+  border-bottom: 2px solid black;
+  &:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  }
+}
+
 // body {
  // background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 // }
@@ -70,12 +79,6 @@ p, ul, ol {
   text-align: left;
   font-size: 1.8rem;
   color: $light-color;
-}
-
-.content {
-  width: 90%;
-  margin: 0 auto;
-  padding: 4rem 0;
 }
 
 .site--link {
