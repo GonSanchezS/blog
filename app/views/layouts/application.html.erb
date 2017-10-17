@@ -26,7 +26,11 @@
     });
 </script>
 
-<header>
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+  </script>
 
   <!-- 
 
@@ -76,7 +80,7 @@
 <footer class="footer col-md-6">
   <div class="container">
     <nav class="footer--nav">
-      <p class="footer--note" id="mobile-invisible">v0.1 in Reyjkavík, v0.2 in Paris</p>
+      <p class="footer--note">v0.1 in Reyjkavík, v0.2 in Paris</p>
     </nav>
   </div>
 </footer>
