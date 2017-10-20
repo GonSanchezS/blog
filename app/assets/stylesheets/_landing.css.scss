@@ -95,7 +95,6 @@ h3 {
 }
 
 .individual--tag {
-  background-color: #c4c4c4;
   border-radius: 5px;
   text-transform: uppercase;
   font-size: 10px;
@@ -108,15 +107,15 @@ h3 {
 
 
  #base {
-    background-color: #000 !important;
+  background-color: black;
   }
 
   #marketing {
-    background-color: #d8d8d8 !important;
+    background-color: black;
   }
 
   #channel {
-    background-color: #c4c4c4 !important;
+    background-color:black;
   }
 
 .work--date {
@@ -129,4 +128,27 @@ a.back {
   margin-top: 2px;
   margin-bottom: 20px !important;
   border-bottom: none;
+}
+
+.foundation {
+  font-weight: 700;
+  letter-spacing: 0.7;
+  font-size: 10px;
+  padding: 3px 10px 3px 10px;
+  margin-top: 0px !important;
+  text-transform: uppercase;
+}
+
+.tags {
+  background-color: #f9f9f9;
+  padding: 10px !important;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px !important;
+}
+
+.skills {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #d5d5d5;
 }
