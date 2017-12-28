@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#index'
   get 'now', to: "static_pages#now"
+  get 'twentyseventeen', to: "static_pages#twentyseventeen"
   get 'cities', to: "static_pages#cities"
   get 'books', to: "static_pages#books"
   get 'email', to: "static_pages#email"
